@@ -1,0 +1,33 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page__wrap {
+  padding: 80px 0;
+}
+
+.page__container {
+  max-width: 880px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.page__pic {
+  margin-bottom: 64px;
+  width: 100%;
+}
+
+.page__head {
+  padding-bottom: 107px;
+  @media (max-width: 767px) {
+    padding-bottom: 60px;
+  }
+}
+
+.page__block {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

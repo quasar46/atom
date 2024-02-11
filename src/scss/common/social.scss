@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  gap: 8px;
+}
+
+.social__item {
+  border-radius: 50%;
+  background-color: var(--light---gray---low-bg);
+  min-width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    display: flex;
+  }
+}

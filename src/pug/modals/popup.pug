@@ -1,0 +1,17 @@
+.overlay
+	.popup 	
+		.popup__close 
+			svg(width="24" height="24")
+				use(href="#icn-cross")
+		h3.popup__title Заказать звонок
+		.popup__body
+			form.form(action="") 
+				.form__item 
+					input(input="text" id="name")
+					label(for="name") Имя
+				.form__item 
+					input(type="tel" id="phone")
+					label(for="phone") Телефон
+				input.btn.form__submit(type="submit" value="Позвоните мне")
+			p.form__agree Нажимая на кнопку вы даёте согласие на обработку своих 
+				span персональных данных

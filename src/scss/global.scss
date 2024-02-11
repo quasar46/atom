@@ -1,0 +1,204 @@
+@import "utils/stylesheet";
+@import "./node_modules/normalize.css/normalize";
+
+// @import "mixins/media";
+@import "utils/variables";
+@import "utils/swiper-bundle.min";
+
+*,
+*::before,
+*::after {
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--font-family);
+}
+
+body {
+  background: var(--light---gray---bg);
+  color: var(--dark---gray---bg);
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: var(--font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--dark---gray---bg-text);
+  line-height: 180%;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+ul,
+ol {
+  li {
+    line-height: 1;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    color: var(--dark---gray---bg-text);
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+}
+
+ol {
+  padding-left: 0;
+  li {
+    position: relative;
+    list-style-position: outside;
+    list-style: none;
+    padding-left: calc(32px + 16px);
+    line-height: 180%;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &::before {
+      content: attr(data-count);
+      font-weight: 500;
+      font-size: 20px;
+      position: absolute;
+      left: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--light---gray---low-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 767px) {
+        width: 26px;
+        height: 26px;
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 767px) {
+      padding-left: 34px;
+    }
+  }
+}
+
+ul {
+  padding-left: 0;
+  li {
+    list-style-position: outside;
+    list-style: none;
+    padding-left: calc(32px + 16px);
+    background-image: url("../img/marker.svg");
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    line-height: 180%;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      @media (max-width: 767px) {
+        margin-bottom: 10px;
+      }
+    }
+    @media (max-width: 767px) {
+      background-size: 26px 26px;
+      padding-left: 34px;
+    }
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+._container {
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 40px;
+  margin: auto;
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
+
+._container2 {
+  // max-width: 1272px;
+  padding: 0 40px;
+  max-width: 1272px + 80px;
+  width: 100%;
+  margin: auto;
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.vectors {
+  display: none;
+}
+
+.line {
+  background: linear-gradient(
+    to left,
+    #fafcff 0%,
+    #fafcff 99.5%,
+    var(--border-color) 0%
+  );
+  background-size: 200px 50%;
+  height: 100%;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}

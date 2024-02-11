@@ -1,0 +1,17 @@
+header.header
+	._container
+		.header__wrap 
+			a.logo(href="index.html") 
+				svg(width="112" height="28")
+					use(href="#icn-logo")
+				span Аутсориснг <br> веб-разработки
+			include switch
+			nav.menu
+				a.menu__link(href="") Услуги
+				a.menu__link(href="") Портфолио
+				a.menu__link(href="") Команда
+				a.menu__link(href="") О нас
+			.header__side 
+				a.header__tel(href="tel:+7923)3707825") +7 (923) 370-78-25 
+				button.btn.showPopup(onclick="showPopup()") Позвоните мне
+			.burger

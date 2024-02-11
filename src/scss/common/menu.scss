@@ -1,0 +1,18 @@
+.menu {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.menu__link {
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--dark---gray---bg);
+  border-radius: 600px;
+  transition: all 0.3s ease;
+  &:hover {
+    background: var(--light---gray---low-bg);
+    transition: all 0.3s ease;
+  }
+}

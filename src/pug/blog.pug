@@ -1,0 +1,110 @@
+extends templates/layout
+
+block main 
+	main
+		._container2
+			a(href="").back-btn
+				svg(width="16" height="15")
+					use(href="#icn-arrow-left")
+				| Назад
+		.blog 
+			._container2 
+				h1.blog__title Наш блог	
+				.blog__links 
+					a.blog__link.active(href="") Все категории 
+					a.blog__link(href="") Верстка сайтов
+					a.blog__link(href="") Разработка
+					a.blog__link(href="") Новости компании
+			.projects.line
+				._container2.blog__wrap 
+					.projects__items 
+						.projects__item 
+							img.projects__item-pic(src="img/pic2.png" alt="")
+							.projects__item-body  
+								.projects__item-head  
+									span.projects__item-title Backend + Вёрстка
+									span.projects__item-name Папа карло
+								.projects__item-content(hidden)
+									p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+									a.btn.projects__item-btn(href="") Подробнее 
+						.projects__item 
+							img.projects__item-pic(src="img/pic3.png" alt="")
+							.projects__item-body 
+								.projects__item-head   
+									span.projects__item-title Backend + Вёрстка
+									span.projects__item-name Чистиков
+								.projects__item-content(hidden)
+									p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+									a.btn.projects__item-btn(href="") Подробнее 
+						.projects__item 
+							img.projects__item-pic(src="img/pic4.png" alt="")
+							.projects__item-body  
+								.projects__item-head  
+									span.projects__item-title Backend + Вёрстка
+									span.projects__item-name Чистиков
+								.projects__item-content(hidden)
+									p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+									a.btn.projects__item-btn(href="") Подробнее 
+
+						.projects__item 
+							img.projects__item-pic(src="img/pic2.png" alt="")
+							.projects__item-body  
+								.projects__item-head  
+									span.projects__item-title Backend + Вёрстка
+									span.projects__item-name Папа карло
+								.projects__item-content(hidden)
+									p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+									a.btn.projects__item-btn(href="") Подробнее 
+						.projects__item 
+							img.projects__item-pic(src="img/pic3.png" alt="")
+							.projects__item-body 
+								.projects__item-head   
+									span.projects__item-title Backend + Вёрстка
+									span.projects__item-name Чистиков
+								.projects__item-content(hidden)
+									p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+									a.btn.projects__item-btn(href="") Подробнее 
+						.projects__item 
+							img.projects__item-pic(src="img/pic4.png" alt="")
+							.projects__item-body  
+								.projects__item-head  
+									span.projects__item-title Backend + Вёрстка
+									span.projects__item-name Чистиков
+								.projects__item-content(hidden)
+									p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+									a.btn.projects__item-btn(href="") Подробнее 
+						.projects__item 
+							img.projects__item-pic(src="img/pic2.png" alt="")
+							.projects__item-body  
+								.projects__item-head  
+									span.projects__item-title Backend + Вёрстка
+									span.projects__item-name Папа карло
+								.projects__item-content(hidden)
+									p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+									a.btn.projects__item-btn(href="") Подробнее 
+						.projects__item 
+							img.projects__item-pic(src="img/pic3.png" alt="")
+							.projects__item-body 
+								.projects__item-head   
+									span.projects__item-title Backend + Вёрстка
+									span.projects__item-name Чистиков
+								.projects__item-content(hidden)
+									p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+									a.btn.projects__item-btn(href="") Подробнее 
+						.projects__item 
+							img.projects__item-pic(src="img/pic4.png" alt="")
+							.projects__item-body  
+								.projects__item-head  
+									span.projects__item-title Backend + Вёрстка
+									span.projects__item-name Чистиков
+								.projects__item-content(hidden)
+									p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+									a.btn.projects__item-btn(href="") Подробнее 
+					a.btn.btn--loading(href="") 
+						| Показать еще
+						svg(width="20" height="20")
+							use(href="#icn-loading")
+
+
+
+		include modules/question

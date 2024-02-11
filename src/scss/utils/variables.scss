@@ -1,0 +1,100 @@
+:root {
+  --light---gray---bg: #fafcff;
+  --dark---gray---bg: #111621;
+  --light---gray---low-bg: #f0f1f5;
+  --light---gray---mid-bg: #3a4459;
+  --light---gray---text-color-mid: #6c7993;
+  --light-gray-text-color-white: #111621;
+  --light---primary---main: #8000ff;
+  --light---secondary---main: #0c5;
+  --dark---primary---main: #8000ff;
+  --dark---secondary---main: #3f8;
+  --dark---gray---text-color-white: #e5eeff;
+  --dark---gray---text-color-mid: #536280;
+  --dark---gray---mid-bg: #3a4459;
+  --dark---gray---low-bg: #1a2233;
+  --dark---gray---bg-text: rgba(17, 22, 33, 0.7);
+  --border-color: rgb(240, 241, 245);
+  --color-logo: #8000ff;
+  --light-gray-text-color-mid: rgb(108, 121, 147);
+  --light-gray-text-color-mid-border: rgba(108, 121, 147, 0.2);
+}
+
+body.dark-theme {
+  --light---gray---bg: rgb(17, 22, 33);
+  --dark---gray---bg: rgb(230, 238, 255);
+  .services__item-price {
+    background: var(--dark---gray---low-bg);
+  }
+  .services__item:first-child,
+  .services__item:last-child {
+    background: var(--dark---gray---low-bg);
+   
+  }
+   @media (max-width: 1023px) {
+      .services__item:nth-child(2n) {
+        background: var(--dark---gray---low-bg);
+      }
+      .services__item:first-child {
+        background: transparent;
+      }
+      .services__item:nth-child(2n) .services__item-price {
+        background: rgb(17, 22, 33);
+      }
+    }
+  .services__item:first-child .services__item-price,
+  .services__item:last-child .services__item-price {
+    background: rgb(17, 22, 33);
+  }
+  --light---gray---low-bg: var(--dark---gray---low-bg);
+  .projects__item-text {
+    color: var(--dark---gray---text-color-mid);
+  }
+  .footer__btn {
+    color: var(--dark---gray---text-color-white);
+  }
+  .form__item input {
+    color: var(--dark---gray---text-color-white);
+  }
+  .line {
+    background: linear-gradient(
+      to left,
+      #111621 0%,
+      #111621 99.5%,
+      var(--dark---gray---low-bg) 0%
+    );
+    background-size: 200px 50%;
+    height: 100%;
+    border-top: 1px solid var(--dark---gray---low-bg);
+    border-bottom: 1px solid var(--dark---gray---low-bg);
+  }
+  --border-color: var(--dark---gray---low-bg);
+  --dark---gray---bg-text: rgba(230, 238, 255, 0.7);
+  ul li {
+    background-image: url("../img/marker-dark.svg");
+  }
+  .overlay {
+    background-color: rgba(17, 22, 33, 0.98);
+  }
+  .form__submit {
+    color: var(--dark---gray---text-color-white);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    // --dark---primary---main: #8000ff;
+    // --dark---secondary---main: #3f8;
+    // --dark---gray---text-color-white: #e5eeff;
+    // --dark---gray---text-color-mid: #536280;
+    // --dark---gray---mid-bg: #3a4459;
+    // --dark---gray---low-bg: #1a2233;
+    // --dark---gray---bg: #111621;
+  }
+}
+
+:root {
+  --font-family: "Montserrat Alternates", sans-serif;
+  --second-family: "Geometria", sans-serif;
+  --third-family: "SF Pro Text", sans-serif;
+}

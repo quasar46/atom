@@ -1,0 +1,211 @@
+extends templates/layout
+
+block main 
+    main
+        .main-block.line2
+            ._container 
+                .main-block__wrap
+                    .main-block__head
+                        h1.main-block__title 
+                            span Аутсорсинг
+                            span веб-разработки
+                        .main-block__subtitle Для Digital-агенства и бизнеса
+                    button.main-block__btn Узнать стоимость проекта
+                    p.main-block__text Ответьте на 3 вопроса и получите примерную <br> стоимость вашего проекта
+
+        .services
+            ._container2
+                h2.services__title Наши услуги
+                .services__wrap 
+                    .services__item 
+                        .services__item-head 
+                            .services__item-title Вёрстка <span>дизайна</span>
+                            .services__item-price 700 ₽ / час
+                        .services__item-body 
+                            p.services__item-text Делаем качественную верстку из всех популярных графических редакторов. Адаптируем сайты под различные устройства и разрешения экранов.
+                            .services__item-block 
+                                .services__item-col 
+                                    .services__item-col-name Верстаем из программ
+                                    .services__item-col-icns 
+                                        svg(width="17" height="24")
+                                            use(href="#icn-p1") 
+                                        svg(width="27" height="24")
+                                            use(href="#icn-p2") 
+                                        svg(width="19" height="24")
+                                            use(href="#icn-p3") 
+                                        svg(width="25" height="24")
+                                            use(href="#icn-p4") 
+                                        svg(width="31" height="24")
+                                            use(href="#icn-p5") 
+                                        svg(width="25" height="24")
+                                            use(href="#icn-p6") 
+                                .services__item-col 
+                                    .services__item-col-name Используя технологии
+                                    .services__item-col-icns 
+                                        svg(width="17" height="24")
+                                            use(href="#icn-p7") 
+                                        svg(width="19" height="24")
+                                            use(href="#icn-p8") 
+                                        svg(width="25" height="24")
+                                            use(href="#icn-p9") 
+                                        svg(width="25" height="24")
+                                            use(href="#icn-p10") 
+                                        svg(width="11" height="24")
+                                            use(href="#icn-p11") 
+                                        svg(width="33" height="24")
+                                            use(href="#icn-p12") 
+                            button.services__item-btn Рассчитать стоимость
+                    .services__item 
+                        .services__item-head 
+                            .services__item-title Frontend <span>разработка</span>
+                            .services__item-price 1 200 ₽ / час
+                        .services__item-body 
+                            p.services__item-text Делаем сложные анимации с оптимальной скоростью загрузки. Работаем с современными JS Frameworks. Создаем SPA.
+                            .services__item-block 
+                                .services__item-col 
+                                    .services__item-col-name Верстаем из программ
+                                    .services__item-col-icns 
+                                        svg(width="17" height="24")
+                                            use(href="#icn-p1") 
+                                        svg(width="27" height="24")
+                                            use(href="#icn-p2") 
+                                        svg(width="19" height="24")
+                                            use(href="#icn-p3") 
+                                        svg(width="25" height="24")
+                                            use(href="#icn-p4") 
+                                        svg(width="31" height="24")
+                                            use(href="#icn-p5") 
+                                        svg(width="25" height="24")
+                                            use(href="#icn-p6") 
+                                .services__item-col 
+                                    .services__item-col-name Используя технологии
+                                    .services__item-col-icns 
+                                        svg(width="17" height="24")
+                                            use(href="#icn-p7") 
+                                        svg(width="19" height="24")
+                                            use(href="#icn-p8") 
+                                        svg(width="25" height="24")
+                                            use(href="#icn-p9") 
+                                        svg(width="25" height="24")
+                                            use(href="#icn-p10") 
+                                        svg(width="11" height="24")
+                                            use(href="#icn-p11") 
+                                        svg(width="33" height="24")
+                                            use(href="#icn-p12") 
+                            button.services__item-btn Рассчитать стоимость
+                    .services__item 
+                        .services__item-head 
+                            .services__item-title Backend <span>разработка</span>
+                            .services__item-price 1 200 ₽ / час
+                        .services__item-body 
+                            p.services__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+                            .services__item-block 
+                                .services__item-col 
+                                    .services__item-col-name Используем CMS
+                                    .services__item-col-icns 
+                                        svg(width="24" height="24")
+                                            use(href="#icn-p13") 
+                                        svg(width="24" height="24")
+                                            use(href="#icn-p14") 
+                                        svg(width="25" height="24")
+                                            use(href="#icn-p15")
+                            button.services__item-btn Рассчитать стоимость
+                    .services__item 
+                        .services__item-head 
+                            .services__item-title Поддержка <span>проекта</span>
+                            .services__item-price 1 200 ₽ / час
+                        .services__item-body 
+                            p.services__item-text Поддерживаем проекты с технической стороны. Выступаем как центр технических компетенций. Консультируем по возникшим вопросам.
+                            button.services__item-btn Рассчитать стоимость
+        .projects 
+            ._container2 
+                .projects__wrap
+                    .projects__head 
+                        h2.projects__title 
+                            | Выполненные <br>
+                            span проекты
+                        .projects__subtitle Реализовали более 200<br> проектов за последние два года
+                    .projects__items 
+                        .projects__item 
+                            img.projects__item-pic(src="img/pic2.png" alt="")
+                            .projects__item-body  
+                                .projects__item-head  
+                                    span.projects__item-title Backend + Вёрстка
+                                    span.projects__item-name Папа карло
+                                .projects__item-content(hidden)
+                                    p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+                                    a.btn.projects__item-btn(href="") Подробнее 
+                        .projects__item 
+                            img.projects__item-pic(src="img/pic3.png" alt="")
+                            .projects__item-body 
+                                .projects__item-head   
+                                    span.projects__item-title Backend + Вёрстка
+                                    span.projects__item-name Чистиков
+                                .projects__item-content(hidden)
+                                    p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+                                    a.btn.projects__item-btn(href="") Подробнее 
+                        .projects__item 
+                            img.projects__item-pic(src="img/pic4.png" alt="")
+                            .projects__item-body  
+                                .projects__item-head  
+                                    span.projects__item-title Backend + Вёрстка
+                                    span.projects__item-name Чистиков
+                                .projects__item-content(hidden)
+                                    p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+                                    a.btn.projects__item-btn(href="") Подробнее 
+
+                        .projects__item 
+                            img.projects__item-pic(src="img/pic2.png" alt="")
+                            .projects__item-body  
+                                .projects__item-head  
+                                    span.projects__item-title Backend + Вёрстка
+                                    span.projects__item-name Папа карло
+                                .projects__item-content(hidden)
+                                    p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+                                    a.btn.projects__item-btn(href="") Подробнее 
+                        .projects__item 
+                            img.projects__item-pic(src="img/pic3.png" alt="")
+                            .projects__item-body 
+                                .projects__item-head   
+                                    span.projects__item-title Backend + Вёрстка
+                                    span.projects__item-name Чистиков
+                                .projects__item-content(hidden)
+                                    p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+                                    a.btn.projects__item-btn(href="") Подробнее 
+                        .projects__item 
+                            img.projects__item-pic(src="img/pic4.png" alt="")
+                            .projects__item-body  
+                                .projects__item-head  
+                                    span.projects__item-title Backend + Вёрстка
+                                    span.projects__item-name Чистиков
+                                .projects__item-content(hidden)
+                                    p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+                                    a.btn.projects__item-btn(href="") Подробнее 
+                        .projects__item 
+                            img.projects__item-pic(src="img/pic2.png" alt="")
+                            .projects__item-body  
+                                .projects__item-head  
+                                    span.projects__item-title Backend + Вёрстка
+                                    span.projects__item-name Папа карло
+                                .projects__item-content(hidden)
+                                    p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+                                    a.btn.projects__item-btn(href="") Подробнее 
+                        .projects__item 
+                            img.projects__item-pic(src="img/pic3.png" alt="")
+                            .projects__item-body 
+                                .projects__item-head   
+                                    span.projects__item-title Backend + Вёрстка
+                                    span.projects__item-name Чистиков
+                                .projects__item-content(hidden)
+                                    p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+                                    a.btn.projects__item-btn(href="") Подробнее 
+                        .projects__item 
+                            img.projects__item-pic(src="img/pic4.png" alt="")
+                            .projects__item-body  
+                                .projects__item-head  
+                                    span.projects__item-title Backend + Вёрстка
+                                    span.projects__item-name Чистиков
+                                .projects__item-content(hidden)
+                                    p.projects__item-text Разрабатываем надежный бэкенд с использованием современных CMS и Framework.
+                                    a.btn.projects__item-btn(href="") Подробнее 
+                    a.btn.projects__show-more(href="") Посмотреть все работы 

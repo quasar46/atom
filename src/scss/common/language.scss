@@ -1,0 +1,28 @@
+.language {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.language__item {
+  label {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  input {
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+    &:checked {
+      & + label {
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
